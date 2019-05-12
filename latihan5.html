@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Semantic UI Sandbox</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css">
+    
+</head>
+<body>
+    <div class="ui container">
+        <br><br>
+        <h1 class="ui header">Grid</h1>
+        <p>A grid is used to harmonize negative space in a layout</p>
+        <hr>
+
+        <!-- automatic flow -->
+        <br><br>
+        <h3>Automatic Flow</h3>
+        <p>Most grids do not need to specify rows. Content will automatically flow to the next row when all the grid column are taken in the current row.</p>
+
+        <div class="ui segment">
+            <div class="ui grid">
+                <div class="four wide column">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto unde cum quis, exercitationem voluptatibus magni? Dolor animi aliquam blanditiis ad.
+                </div>
+                <div class="four wide column">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto unde cum quis, exercitationem voluptatibus magni? Dolor animi aliquam blanditiis ad.
+                </div>
+                <div class="four wide column">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto unde cum quis, exercitationem voluptatibus magni? Dolor animi aliquam blanditiis ad.
+                </div>
+                <div class="four wide column">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto unde cum quis, exercitationem voluptatibus magni? Dolor animi aliquam blanditiis ad.
+                </div>
+                <div class="four wide column">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto unde cum quis, exercitationem voluptatibus magni? Dolor animi aliquam blanditiis ad.
+                </div>
+                <div class="twelve wide column">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit incidunt mollitia quo vel eius, nesciunt similique doloremque consequuntur soluta recusandae?
+                </div>
+                <div class="sixteen wide grid">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem velit consequatur soluta esse, inventore dolorem totam aut voluptatibus iure. Voluptate?
+                </div>
+            </div>
+        </div>
+
+        <!-- special grids -->
+        <br><br>
+        <h2>Special Grids</h2>
+        <p>Additionally, some types of grids, like divided or celled require row wrappers to apply formatting correctly</p>
+
+        <div class="ui segment">
+            <div class="ui internal celled grid">
+                <div class="row">
+                    <div class="four wide column">
+                        <img src="/img/patrick.png" alt="patrick" class="ui small image">
+                    </div>
+                    <div class="eight wide column">
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatum possimus esse at consectetur dolorum voluptates, hic voluptatibus iure itaque molestias.</p>
+                    </div>
+                    <div class="four wide column">
+                        <img src="/img/patrick.png" alt="" class="ui small image">
+                    </div>
+                </div>
+                <div class="row">
+                        <div class="four wide column">
+                            <img src="/img/patrick.png" alt="patrick" class="ui small image">
+                        </div>
+                        <div class="eight wide column">
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatum possimus esse at consectetur dolorum voluptates, hic voluptatibus iure itaque molestias.</p>
+                        </div>
+                        <div class="four wide column">
+                            <img src="/img/patrick.png" alt="" class="ui small image">
+                        </div>
+                    </div>
+            </div>
+        </div>
+
+        <!-- nesting grid -->
+        <br><br>
+        <h3>Nesting Grid</h3>
+        <p>Grids can be placed inside of other grids, letting you sub-divide columns.</p>
+
+        <div class="ui segment">
+            <div class="ui two column grid">
+                    <div class="row">
+                        <div class="column">
+                            <div class="ui three column grid">
+                                <div class="column">
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum, voluptatibus?
+                                </div>
+                                <div class="column">
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum, voluptatibus?
+                                </div>
+                                <div class="column">
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum, voluptatibus?
+                                </div>
+                            </div>
+                        </div>
+                        <div class="column">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit maiores dolorum consequuntur tempore esse. Voluptates atque consequatur dignissimos doloribus eligendi perferendis blanditiis voluptatum quaerat iusto natus, corrupti facilis fugit. 
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="column">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste, iusto quis? Molestiae delectus illo hic repudiandae quam officia dolorum. Minima!
+                        </div>
+                        <div class="column">
+                            <div class="ui two column grid">
+                                <div class="column">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex, veniam.
+                                </div>
+                                <div class="column">
+                                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officia, iusto?
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+            </div>
+        </div>
+
+        <!-- automatic column count -->
+        <br><br>
+        <h3>Automatic Column Count</h3>
+        <p>THe equal width variation will automatically divide column width evenly. This is useful with dynamic content where you do not know the column count in advance</p>
+
+        <div class="ui segment">
+            <div class="ui equal width grid">
+                <div class="column">
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cum, fugit.
+                </div>
+                <div class="column">
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cum, fugit.
+                </div>
+                <div class="column">
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cum, fugit.
+                </div>
+                <div class="equal witdh row">
+                    <div class="column">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti, temporibus?
+                    </div>
+                    <div class="column">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti, temporibus?
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- centering content -->
+        <br><br>
+        <h3>Centering Content</h3>
+        <p>If a row not take up all sixteen grid columns, you can use a centered variation to center the column contents inside the grid.</p>
+
+        <div class="ui segment">
+            <div class="ui two column centered grid">
+                <div class="column">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos, aperiam?
+                </div>
+                <div class="four column centered row">
+                    <div class="column">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio, incidunt?
+                    </div>
+                    <div class="column">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio, incidunt?
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- significant word order -->
+        <br><br>
+        <h3>Significant Word Order</h3>
+        <p>Grid include many variations for adjusting things like vertical or horizontal alignment, text alignment, or default gutter sizes.
+        <br>
+        Some multi-word variations, like left floated or right aligned are word-order depentment and require you to use adjacent class names.
+        </p>
+
+        <div class="ui segment">
+            <div class="ui right aligned grid">
+                <div class="six wide left floated right aligned column">
+                    Left floated right aligned column
+                </div>
+                <div class="six wide right floated left aligned column">
+                    Right floated left aligned column
+                </div>
+                <div class="center aligned two column row">
+                    <div class="column">
+                        Center ailgned row
+                    </div>
+                    <div class="column">
+                        Center ailgned row
+                    </div>
+                </div>
+                <div class="sixteen wide right aligned column">
+                    Right aligned grid
+                </div>
+            </div>
+        </div>
+        
+        <!-- container -->
+        <br><br>
+        <h3>Container</h3>
+        <p>A container can be used alingside a grid to provide a responsive, foved width container for wrapping the content of a page.</p>
+
+        <div class="ui segment">
+            <div class="ui grid container">
+                <div class="four wide column">Four</div>
+                <div class="four wide column">Four</div>
+                <div class="four wide column">Four</div>
+                <div class="four wide column">Four</div>
+                <div class="four wide column">Four</div>
+                <div class="four wide column">Four</div>
+                <div class="four wide column">Four</div>
+                <div class="four wide column">Four</div>
+            </div>
+        </div>
+
+        <!-- stackable -->
+        <br><br>
+        <h3>Stackable</h3>
+        <p>A stackable grid will automatically stack rows to a single colunmns on mobile devices</p>
+
+        <div class="ui segment">
+            <div class="ui four column stackable grid">
+                <div class="column">Four</div>
+                <div class="column">Four</div>
+                <div class="column">Four</div>
+                <div class="column">Four</div>
+            </div>
+        </div>
+
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.js"></script>
+</body>
+</html>
